@@ -1,0 +1,54 @@
+*{
+  margin: 0px;
+  padding: 10px 2;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  text-align: center;
+  
+}
+.logo {
+  height: auto;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.navbar {
+  height: auto;
+  background-color: skyblue;
+}
+ .pic {
+  position: relative;
+  white-space: nowrap;
+  animation: rightThenleft 30s linear;
+  animation-iteration-count: infinite;
+ 
+ }
+  @keyframes rightThenleft {
+    0% { left: 0%;}
+    50% { left: 50%;}
+    100% { left: 0%;}
+  }
+ @media only screen and (min-width: 480px) {
+   .piv {
+     font-size: 2rem;
+   }
+   .navbar{
+     font-size: 2rem;
+     background-color: red;
+   }
+ } 
+ button {
+   width: auto;
+   outline: none;
+   border-radius: 20%;
+   background-color: darkred;
+   color: white
+ }
+ .navbar > alist > a {
+   
+ }
