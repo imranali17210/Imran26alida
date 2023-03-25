@@ -1,54 +1,216 @@
 *{
-  margin: 0px;
-  padding: 10px 2;
+  margin-top: 0px;
+  padding: 0px 0px;
   box-sizing: border-box;
+  color: black;
 }
 .container {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   text-align: center;
+  line-height: 5vh;
   
 }
 .logo {
   height: auto;
   background-color: greenyellow;
-  display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
+  display: flex;
 }
 .navbar {
   height: auto;
-  background-color: skyblue;
+  background-color: white;
 }
  .pic {
   position: relative;
   white-space: nowrap;
   animation: rightThenleft 30s linear;
   animation-iteration-count: infinite;
- 
+  
  }
   @keyframes rightThenleft {
     0% { left: 0%;}
-    50% { left: 50%;}
+    50% { left: 30%;}
     100% { left: 0%;}
   }
- @media only screen and (min-width: 480px) {
+ @media only screen and (max-width: 480px) {
    .piv {
-     font-size: 2rem;
+     font-size: 1rem;
+   }
+   .photo  {
+     display: inline-block;
    }
    .navbar{
      font-size: 2rem;
-     background-color: red;
+     background-color: #3586ff;
    }
+   .education {
+     display: flex;
+     flex-direction: column;
+     border-bottom: solid black;
+     overflow: hidden;
+   }
+   .about {
+     display: flex;
+     background-color: chartreuse;
+     flex-direction: column;
+   }
+   @keyframes rightThenleft {
+    0% { left: 0%;}
+    50% { left: 75%;}
+    100% { left: 0%;}
+  }
+  #resume {
+    height: 3vh;
+  }
  } 
- button {
+ button  {
    width: auto;
-   outline: none;
-   border-radius: 20%;
-   background-color: darkred;
+   outline: black;
+   border-radius: 15px;
+   background-color: #3586ff;
    color: white
  }
- .navbar > alist > a {
+ .alist > a {
+   text-decoration: none;
+ }
+ .search-button input{
+   border: 1px black solid;
+   border-radius: 5%;
+   width: 70%;
+ }
+ .alist {
+   justify-content: space-evenly;
+   display: flex;
+ }
+ #resume {
+   background-color: Red;
    
  }
+ .alist a {
+   cursor: pointer;
+ }
+ .alist a :hover, a :active{
+   transform: translateY(-5px);
+   background-color: deepskyblue;
+   transition-duration: .3s;
+ }
+ .intro h1  {
+   text-align: center;
+   margin-top: 5vh;
+ }
+ .span {
+   color: red;
+   transition: .5s;
+ }
+ .photo > img{
+   display: relative;
+   height: 40%;
+   width: 300px;
+   align-items: center;
+ }
+ .footer {
+   background-color: #3586ff
+ }
+ .social-icon {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   padding-top: 10px;
+ }
+ .social-icon a{
+   color: white;
+   margin: 15px 13px;
+ }
+ .rights {
+   text-align: center;
+ }
+ .about {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .welcome {
+   width: 50%;
+   height: 45%;
+ }
+ .skill-list img{
+   width: 50px;
+ }
+ .skill-list{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ #skill {
+   text-align: center;
+   padding: 3vh 0 1vh 0;
+ }
+ .contact-form {
+   min-height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2vh 0;
+ }
+ form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 50vw;
+  min-height: 10vh;
+  border: 3px solid black;
+  
+ }
+ form > input, textarea {
+   width: 40vw;
+   border-radius: 10px;
+   margin: 20px 0;
+   border: 2px solid black;
+   outline: none;
+   background-color: whitesmoke;
+ }
+ .education{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color: whitesmoke;
+   border: 2px solid black;
+   border-radius: 10px;
+ }
+ #edu {
+   text-align: center;
+   margin: 2vh 0;
+   background-color: #3586ff
+   
+ }
+ #skill h2{
+   background-color: #3586ff;
+ }
+  img{
+   border-radius: 30%;
+   background-color: yellow;
+ }
+ .alist p {
+   background-color: red;
+   border: 2px solid black;
+   border-radius: 15px;
+ }
+ .education div{
+   background-color: whitesmoke;
+   margin-right: auto;
+   border-right: solid black;
+ }
+ .navbar button{
+   background-color: black;
+   height: 2vh;
+   width: 20vw;
+   float: center;
+   
+ } 
