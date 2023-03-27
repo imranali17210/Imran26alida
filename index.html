@@ -12,16 +12,16 @@
     <div class="container">
       <div class="logo">
         <div class="pic">Imran26alida</div>
-        <div class="dark-mode"><button type="submit">Dark Mode</button></div>
+        <div><button onclick="darkMode()">Dark Mode</button></div>
       </div>
       <div class="navbar">
         <div class="alist">
-          <a href="#rome">Home</a>
+          <a href="#Home">Home</a>
           <a href="#About">About</a>
           <a href="#Work">Work</a>
           <a href="#contact">Contact</a>
-          <button type="submit" onclick="window.open('IMRAN ALI Resume.pdf')">Download Resume</button>
         </div>
+        
       </div>
       <div class="search-button">
         <input type="text" placeholder="search here">
@@ -30,14 +30,15 @@
     </div>
     <div class="intro">
       <h1>Hello my self <span class="span">Imran Ali</span></h1>
-    </div>
+          <button type="submit" onclick="window.open('IMRAN ALI Resume.pdf')">Download Resume</button>
+        </div>
     <div class="about">
       <div class="welcome">
        <h3>First of all Welcome to my website portfolio, </h3>
        <h4>I'm 26 years old, I live in New Delhi. I want to be a data analyst and learning the required skills and knowledge to be it.</h4>
       </div>
         <div class="photo">
-          <img src="imran web.jpg" alt="imran ali">
+          <img src="/preliem/image/IMG_20220531_150115_1.png" alt="imran ali">
         <!--  <h3>Imran Ali</h3>-->
         </div>
     </div>
@@ -122,7 +123,13 @@
     </div>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+  function darkMode() {
+  var element = document.body
+  element.classList.toggle('dark-mode');
+}
+</script>
+<script src="app.js">app.js</script>
 </body>
 
 </html>
