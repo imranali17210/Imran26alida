@@ -1,20 +1,16 @@
-*{
+* {
   margin-top: 0px;
-  padding: 0px 0px;
+  padding: 0px;
   box-sizing: border-box;
-  color: black;
+  overflow-x: hidden;
 }
 .container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  
   text-align: center;
   line-height: 5vh;
-  
 }
 .logo {
   height: auto;
-  background-color: greenyellow;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -34,17 +30,21 @@
   @keyframes rightThenleft {
     0% { left: 0%;}
     50% { left: 30%;}
-    100% { left: 0%;}
+    70% { left: 0%;}
   }
  @media only screen and (max-width: 480px) {
    .piv {
      font-size: 1rem;
    }
+   .intro>button {
+     height: auto;
+     width: 30vw;
+   }
    .photo  {
      display: inline-block;
    }
    .navbar{
-     font-size: 2rem;
+     font-size: 1rem;
      background-color: #3586ff;
    }
    .education {
@@ -55,7 +55,6 @@
    }
    .about {
      display: flex;
-     background-color: chartreuse;
      flex-direction: column;
    }
    @keyframes rightThenleft {
@@ -66,9 +65,8 @@
   #resume {
     height: 3vh;
   }
- } 
+ }
  button  {
-   width: auto;
    outline: black;
    border-radius: 15px;
    background-color: #3586ff;
@@ -81,6 +79,7 @@
    border: 1px black solid;
    border-radius: 5%;
    width: 70%;
+   height: 2.5vh;
  }
  .alist {
    justify-content: space-evenly;
@@ -98,9 +97,13 @@
    background-color: deepskyblue;
    transition-duration: .3s;
  }
- .intro h1  {
+ .intro > h1{
    text-align: center;
    margin-top: 5vh;
+ }
+ .intro {
+   text-align: center;
+   direction: flex;
  }
  .span {
    color: red;
@@ -163,26 +166,31 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  width: 50vw;
+  width: 80vw;
   min-height: 10vh;
   border: 3px solid black;
   
  }
  form > input, textarea {
-   width: 40vw;
+   width: 65vw;
    border-radius: 10px;
    margin: 20px 0;
    border: 2px solid black;
    outline: none;
    background-color: whitesmoke;
+   min-height: 2vh;
  }
  .education{
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-   background-color: whitesmoke;
    border: 2px solid black;
    border-radius: 10px;
+ }
+ .education div{
+   width: 33%
+   padding-right: 
+   border: 2px solid black;
  }
  #edu {
    text-align: center;
@@ -194,23 +202,33 @@
    background-color: #3586ff;
  }
   img{
-   border-radius: 30%;
-   background-color: yellow;
+   border-radius: 7%;
  }
  .alist p {
    background-color: red;
    border: 2px solid black;
    border-radius: 15px;
  }
- .education div{
-   background-color: whitesmoke;
-   margin-right: auto;
-   border-right: solid black;
- }
- .navbar button{
-   background-color: black;
-   height: 2vh;
+ button{
+   background-color: #3688ff;
+   height: 3vh;
    width: 20vw;
    float: center;
-   
- } 
+   margin-top: 15px;
+ }
+ @media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
