@@ -142,7 +142,8 @@
    height: 45%;
  }
  .skill-list img{
-   width: 50px;
+   width: 100px;
+   height: 50px;
  }
  .skill-list{
    display: flex;
